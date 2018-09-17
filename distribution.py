@@ -37,9 +37,15 @@ Notice about this example:
 * Letters that do not occur in the text are not listed in the output at all.
 """
 import string
-text = str(input("Please enter a string of text (the bigger the better): ").lower())
-alpha = string.ascii_lowercase
-for alpha in text:
-    for l in alpha:
-        newtext = text.count(l)
-        print(newtext)
+text = str(input("Please enter a string of text (the bigger the better): "))
+print('The distribution of characters in ''"' + text + '" is:')
+text = text.lower()
+alpha = list(string.ascii_lowercase)
+
+newtext = []
+
+for l in alpha:
+    if text.count(l) != 0:
+        newtext.append(l * text.count(l))
+        newtext.sort()
+print(newtext)
