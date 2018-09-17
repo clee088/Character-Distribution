@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: Christopher Lee
-Credit: 
+Credit: https://developers.google.com/edu/python/sorting
 
 Assignment:
 
