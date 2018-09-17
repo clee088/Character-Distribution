@@ -39,6 +39,7 @@ Notice about this example:
 import string
 text = str(input("Please enter a string of text (the bigger the better): ").lower())
 alpha = string.ascii_lowercase
-for l in alpha:
-    newtext = text.count(l)
-    print(newtext)
+for alpha in text:
+    for l in alpha:
+        newtext = text.count(l)
+        print(newtext)
