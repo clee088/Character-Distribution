@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: Christopher Lee
-Credit: <list sources used, if any>
+Credit: 
 
 Assignment:
 
@@ -47,5 +47,8 @@ newtext = []
 for l in alpha:
     if text.count(l) != 0:
         newtext.append(l * text.count(l))
-        newtext.sort()
-print(newtext)
+        
+
+p = (sorted(newtext, key=len, reverse = True))
+for i in p:
+    print(i)
